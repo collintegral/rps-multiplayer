@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>RPS</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-9" id="header">
+            <h1 id="title">Rock! Paper! Scissors!</h1>
+        </div>
+        <div class="col-md-3">
+            <form id="newname">
+                Player Name: <input type="text" name="pname">
+                <input type="submit" value="Update">
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h3 id="p1name">Player 1: </h3>
+            <h4 id="p1wins">Wins: </h4>
+        </div>
+        <div class="col-md-6">
+            <h3 id="p2name">Player 2: </h3>
+            <h4 id="p2wins">Wins: </h4>
+        </div>
+    </div>
+
+<div class="row">
+    <div class="col-md-12">
+        <h5 id="current-action">Welcome! Waiting for an opponent to join...</h5>
+    </div>
+</div>
+
+    <div class="row">
+        <div class="col-md-4" id="p1move">
+
+        </div>
+        <div class="col-md-4">
+            
+            <div id="btndiv"></div>
+        </div>
+        <div class="col-md-4" id="p2move">
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h2 id="chat"></h2>
+        </div>
+    </div>
+
+    <script src="./assets/javascript.js"></script>
+</body>
