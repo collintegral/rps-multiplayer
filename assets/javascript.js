@@ -128,3 +128,13 @@ $("#newname").submit(event => {
     p1name = $("input:first").val();
     updateNames();
 })
+
+/*
+Function needed to connect to Firebase
+Function to check for an unmatched player:
+if one is found, connect to their 'lobby'
+if none, create a new 'lobby' pairing and wait for an opponent.
+Function to listen for opponent's Ready variable. Game should not progress until both players are Ready after each step.
+Function to grab opponent's name (and listen for its updates), as well as their moves: store these in the p2 slots.
+Function to inform the player when opponent has left, and suggest refreshing the site to rejoin the queue.
+*/
